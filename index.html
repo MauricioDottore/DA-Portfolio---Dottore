@@ -1,53 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Analyst Portfolio - Mauricio Dottore</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <!-- Add Font Awesome CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script defer src="scripts.js"></script>
+    </head>
+    
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Mauricio Dottore</h1>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div id="menu-toggle" class="menu-toggle">☰</div>
+            </nav>
+        </div>
     </header>
 
-    <section id="home">
-        <h1>Welcome to My Data Analyst Portfolio</h1>
-        <p>Explore my work and projects related to data analysis.</p>
-    </section>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hi, I'm Mauricio Dottore, a data analyst with expertise in data visualization, statistical analysis, and machine learning.
+                    I have a passion for uncovering insights from data and presenting them in a meaningful way. With experience in tools like Python and SQL. I help organizations make data-driven decisions.</p>
+            </div>
+        </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm [Your Name], a data analyst with experience in [brief description of your background and skills].</p>
-    </section>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <a href="project1.html" class="project-link">
+                        <div class="project">
+                            <h3>Project 1: Sales Data Analysis</h3>
+                            <p>Analyzed sales data to identify trends and opportunities. <span class="read-more">Read more</span></p>
+                            <!-- Embed interactive visualization -->
+                            <iframe src="https://public.tableau.com/views/YourVizName/YourDashboardName?:embed=y&:display_count=yes"></iframe>
+                        </div>
+                    </a>
+                    <a href="project2.html" class="project-link">
+                        <div class="project">
+                            <h3>Project 2: Customer Segmentation</h3>
+                            <p>Used clustering techniques to segment customers based on purchasing behavior. <span class="read-more">Read more</span></p>
+                            <!-- Embed interactive visualization -->
+                            <iframe src="https://public.tableau.com/views/YourVizName/YourDashboardName?:embed=y&:display_count=yes"></iframe>
+                        </div>
+                    </a>
+                    <!-- Add more projects as needed -->
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <h3>Python</h3>
+                        <p>Experienced in using Python for data analysis, machine learning, and automation. ETL.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Pandas, Numpy, Scipy</h3>
+                        <p>Proficient in using Pandas, Numpy, and Scipy for data manipulation, numerical computations, and scientific computing.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Matplotlib, Seaborn, Plotly</h3>
+                        <p>Skilled in creating static, animated, and interactive visualizations using Matplotlib, Seaborn, and Plotly.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>SQL</h3>
+                        <p>Skilled in querying, managing, and manipulating databases using SQL.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Power BI</h3>
+                        <p>Expert in creating interactive dashboards and visualizations with Power BI.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Data Warehousing, GIT, GitHub, Shell Scripting</h3>
+                        <p>Experienced in data warehousing, version control with GIT, collaborative development with GitHub, and automation using shell scripting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1 Title</h3>
-            <p>Description of Project 1. <a href="project1.html">Read more</a></p>
-        </div>
-        <div class="project">
-            <h3>Project 2 Title</h3>
-            <p>Description of Project 2. <a href="project2.html">Read more</a></p>
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
-    </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>If you'd like to get in touch, email me at: <a href="mailto:mauriciodottore@gmail.com">mauriciodottore@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <div class="container">
+            <!-- Social media links -->
+            <div class="social-links">
+                <a href="https://linkedin.com/in/mauriciodottore" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mauriciodottore" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:mauriciodottore@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+            <!-- Copyright notice -->
+            <p>&copy; 2024 Mauricio Dottore. All rights reserved.</p>
+        </div>
     </footer>
+    
+    
 </body>
 </html>
