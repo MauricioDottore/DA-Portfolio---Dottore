@@ -3,29 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2 - Data Analysis</title>
+    <title>Project: COVID-19 Analysis - Your Name</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About Me</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">Mauricio Dottore</a></h1>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html#about">About Me</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div id="menu-toggle" class="menu-toggle">☰</div>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <h2>Project 2 Title</h2>
-        <p>Detailed description of Project 1, including objectives, methods, results, and conclusions. You can include images, charts, and other visualizations here.</p>
-        <img src="images/project1-visualization1.png" alt="Project 2 Visualization">
-    </section>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Project: COVID-19 Analysis - Deaths, Infections, and Vaccination Impact</h2>
+                <p>This project involved utilizing SQL, Excel, and Power BI to conduct a comprehensive analysis of global COVID-19 data. The primary objectives were to explore trends, assess the impact of interventions, and visualize key insights for stakeholders.</p>
+                <h3>Methods Used</h3>
+                <p>We employed SQL for data exploration and preparation, Excel for data organization and preprocessing, and Power BI for interactive visualization. Key techniques included:</p>
+                <ul>
+                    <li>Data querying and aggregation in SQL.</li>
+                    <li>Data cleaning and formatting in Excel.</li>
+                    <li>Creating interactive dashboards in Power BI.</li>
+                </ul>
+                <h3>Data Analysis</h3>
+                <p>The analysis focused on extracting actionable insights from COVID-19 data, including:</p>
+                <ul>
+                    <li>Identifying countries with the highest infection rates, mortality rates, and vaccination coverage.</li>
+                    <li>Assessing the effectiveness of public health measures in controlling the spread of the virus.</li>
+                    <li>Evaluating the impact of vaccination campaigns on reducing COVID-19 transmission and fatalities.</li>
+                </ul>
+                <h3>Insights Gained</h3>
+                <p>The analysis revealed several key insights:</p>
+                <ul>
+                    <li>Countries with higher vaccination rates experienced lower infection rates and mortality rates.</li>
+                    <li>There were notable disparities in vaccination coverage between regions, highlighting the need for equitable distribution.</li>
+                    <li>Temporal analysis showed fluctuations in COVID-19 trends, indicating the dynamic nature of the pandemic.</li>
+                </ul>
+                <p>Below there are captures of the project:</p>
+                <!-- Replace the src attribute with your Power BI embed link -->
+                <iframe width="800" height="600" src="Resources\Project1\Proyecto1.png" frameborder="0" allowFullScreen="true"></iframe>
+                <iframe width="800" height="600" src="Resources\Project1\excel project1.png" frameborder="0" allowFullScreen="true"></iframe>
+                <iframe width="800" height="600" src="Resources\Project1\sql project1.png" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <div class="container">
+            <!-- Social media links -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mauricio-dottore/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mauriciodottore" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:mauriciodottore@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+            <!-- Copyright notice -->
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
