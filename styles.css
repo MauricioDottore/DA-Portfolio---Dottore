@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+    padding: 0; /* Add padding for general body content */
 }
 
 /* Container to wrap sections */
@@ -106,34 +107,26 @@ header ul li a:hover {
 .section {
     padding: 60px 0;
     background: #fff;
-    margin: 80px 0;
+    margin: 100px 0; /* Increased margin for more separation */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .section h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased margin for more separation */
     font-size: 30px;
     color: #444;
 }
 
-.projects-grid {
+.projects-grid, .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px; /* Increased gap for more separation */
 }
-
-.skills-grid {
-    display: box;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-   
-
 
 .project, .skill {
-    padding: 20px;
+    padding: 30px; /* Increased padding for more separation */
     border: 1px solid #ddd;
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -155,17 +148,17 @@ footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0; /* Increased padding for more separation */
 }
 
 .social-links {
-    margin-top: 20px;
+    margin-top: 30px; /* Increased margin for more separation */
     text-align: center;
 }
 
 .social-links a {
-    color: #fff; /* Changed color to white */
-    margin: 0 10px;
+    color: #fff;
+    margin: 0 15px; /* Increased margin for more separation */
     text-decoration: none;
     font-size: 28px;
     display: inline-block;
@@ -180,8 +173,8 @@ footer {
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 15px; /* Increased gap for more separation */
+    margin-top: 30px; /* Increased margin for more separation */
 }
 
 form label {
@@ -189,7 +182,7 @@ form label {
 }
 
 form input, form textarea, form button {
-    padding: 10px;
+    padding: 15px; /* Increased padding for more separation */
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -207,16 +200,16 @@ form button:hover {
 /* Ensure the entire project container is clickable */
 .project-link {
     text-decoration: none;
-    color: inherit; /* Ensure the text color remains unchanged */
-    display: block; /* Make the link fill the container */
+    color: inherit;
+    display: block;
 }
 
 .project {
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
+    padding: 30px; /* Increased padding for more separation */
     transition: transform 0.3s, box-shadow 0.3s;
-    background-color: #fff; /* Ensure background color is applied */
+    background-color: #fff;
 }
 
 .project:hover {
@@ -224,7 +217,6 @@ form button:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensure iframe styling remains the same */
 iframe {
     width: 100%;
     height: 300px;
@@ -232,9 +224,18 @@ iframe {
     margin-top: 10px;
 }
 
-/* Style the 'Read more' text */
 .read-more {
     text-decoration: underline;
-    color: #0066cc; /* Adjust color as needed */
+    color: #0066cc;
     cursor: pointer;
+}
+
+/* Spacing adjustments for body, headings, and paragraphs */
+h1, h2, h3, p, ul, form, input, textarea, button {
+    margin-bottom: 20px; /* Added margin for more separation */
+    line-height: 1.6; /* Improved line-height for better readability */
+}
+
+ul {
+    padding-left: 20px; /* Added padding to ul for indentation */
 }
